@@ -27,8 +27,8 @@
 			<!--/nav-->
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
-					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-play icon-log" aria-hidden="true"></span>
-						ProShowz </a></h1>
+					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
+						DBMS </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -44,16 +44,16 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">Home</a>
+								<a class="nav-link" href="index.php">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="about.html">About</a>
+								<a class="nav-link" href="about.php">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="genre.html">Genre</a>
+								<a class="nav-link" href="genre.php">Genre</a>
 							</li>
 							<li class="nav-item active">
-								<a class="nav-link" href="contact.html">Contact</a>
+								<a class="nav-link" href="contact.php">Contact</a>
 							</li>
 						</ul>
 	
@@ -254,39 +254,17 @@
 							<div class="row footer-links">
 
 
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Movies</h6>
-									<ul>
-										<li><a href="#">Movies</a></li>
-										<li><a href="#">Videos</a></li>
-										<li><a href="#">English Movies</a></li>
-										<li><a href="#">Tailor</a></li>
-										<li><a href="#">Upcoming Movies</a></li>
-										<li><a href="contact.html">Contact Us</a></li>
-									</ul>
-								</div>
+								
 								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
 									<h6>Information</h6>
 									<ul>
-										<li><a href="index.html">Home</a> </li>
-										<li><a href="about.html">About</a> </li>
-										<li><a href="#">Tv Series</a> </li>
-										<li><a href="#">Blogs</a> </li>
-										<li><a href="#">Login</a></li>
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="index.php">Home</a> </li>
+										<li><a href="about.php">About</a> </li>
+										<li><a href="main login.php">Login</a></li>
+										<li><a href="contact.php">Contact</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Locations</h6>
-									<ul>
-										<li><a href="genre.html">Asia</a></li>
-										<li><a href="genre.html">France</a></li>
-										<li><a href="genre.html">Taiwan</a></li>
-										<li><a href="genre.html">United States</a></li>
-										<li><a href="genre.html">Korea</a></li>
-										<li><a href="genre.html">United Kingdom</a></li>
-									</ul>
-								</div>
+								
 								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
 									<h6>Newsletter</h6>
 									<form action="#" class="subscribe mb-3" method="post">
