@@ -1,28 +1,27 @@
 <?php
+    session_start();
+    $conn = mysqli_connect('localhost', 'root', '', 'project');
 
-	session_start();
-	$conn = mysqli_connect('localhost', 'root', '', 'project');
+        if (!$conn) {
+            echo 'Connection error'.mysqli_connect_error();
+        }
 
-		if (!$conn) {
-			echo 'Connection error'.mysqli_connect_error();
-		}
-
-	if (isset($_POST['create'])) {
-		$name=mysqli_real_escape_string($conn, $_REQUEST['name']);
-		$username=mysqli_real_escape_string($conn, $_REQUEST['username']);
-		$password=mysqli_real_escape_string($conn, $_REQUEST['password']);
+    if (isset($_POST['create'])) {
+        $name=mysqli_real_escape_string($conn, $_REQUEST['name']);
+        $username=mysqli_real_escape_string($conn, $_REQUEST['username']);
+        $password=mysqli_real_escape_string($conn, $_REQUEST['password']);
 
 
-		$sql = "INSERT INTO login (name,username,password) VALUES('$name','$username','$password')";
+        $sql = "INSERT INTO `admin_login` (name,username,password) VALUES('$name','$username','$password')";
 
-		if (!(mysqli_query($conn, $sql))) {
-			header('Location: http://localhost/Main%20Page/create_acc.php?id=404');
-			exit();
-		} else {
-			$_SESSION['username']=$username;
-			header('Location: http://localhost/Main%20Page/index.php');
-			exit();
-		}
+        if (!(mysqli_query($conn, $sql))) {
+            header('Location: http://localhost/Main%20Page/create_acc.php?id=404');
+            exit();
+        } else {
+            $_SESSION['username']=$username;
+            header('Location: http://localhost/Main%20Page/index.php');
+            exit();
+        }
 }
 ?>
 
@@ -79,8 +78,8 @@
 		</div>
 		<div class="content-w3ls">
 			<div class="text-center icon">
-			<i class="fa fa-spinner fa-spin" style="font-size:24px;;color:white"></i>
-				<span style="font-size:24px;;color:white">Create an account</span>
+            <i class="fa fa-spinner fa-spin" style="font-size:24px;;color:white"></i>
+				<span style="font-size:24px;;color:white">Admin Login</span>
 			</div>
 			<div class="content-bottom">
 
@@ -143,7 +142,7 @@
 					</ul>
 					<ul class="list-login-bottom">
 						<li class="">
-							<a href="main login.php" class="">Login</a>
+							<a href="admin login.php" class="">Login</a>
 						</li>
 						<li class="">
 							<a href="#" class="text-right">Need Help?</a>
