@@ -79,16 +79,16 @@ if (isset($_POST['login'])){
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="active">
-						<a href="#" class="">Login</a>
+						<a href="main login.php" class="">Login</a>
 					</li>
 					<li class="">
-						<a href="#" class="">About Us</a>
+						<a href="about.php" class="">About Us</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Register</a>
+						<a href="create_acc.php" class="">Register</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Contact</a>
+						<a href="contact.php" class="">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -156,7 +156,7 @@ if (isset($_POST['login'])){
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="">
-						<a href="#" class="">About Us</a>
+						<a href="about.php" class="">About Us</a>
 					</li>
 					<li class="">
 						<a href="#" class="">Privacy Policy</a>
