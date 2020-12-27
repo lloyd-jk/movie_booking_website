@@ -5,6 +5,17 @@ No    -   Description
 
 -->
 <?php
+	session_start();	
+
+	if (strpos($_SERVER['REQUEST_URI'], 'logout') !== false) {
+		session_unset();
+		session_destroy();
+		header('Location: http://localhost/Main%20Page/main login.php');
+	}
+	// echo $_SESSION['username'];
+?>
+
+<?php
 
 $conn = mysqli_connect('localhost','root','','project');
 
@@ -15,6 +26,7 @@ $conn = mysqli_connect('localhost','root','','project');
 if (isset($_POST['login'])){     
     $username=mysqli_real_escape_string($conn,$_REQUEST['username']);
 	$password=mysqli_real_escape_string($conn,$_REQUEST['password']);
+	$_SESSION['username']= $username;
 	
     $sql="SELECT * FROM `login` WHERE username='$username'";
     $sql1=mysqli_query($conn,$sql);
@@ -24,7 +36,7 @@ if (isset($_POST['login'])){
     }
 	if(count($output)==1 && (strcmp($output[0]['password'],$password)==0))
 	{
-		header('Location: http://localhost/Main%20Page/index.html');
+		header('Location: http://localhost/Main%20Page/index.php');
 		exit();
     }
 	header('Location: http://localhost/Main%20Page/main login.php?id=405');
