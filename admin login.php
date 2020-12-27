@@ -10,7 +10,7 @@ No    -   Description
 	if (strpos($_SERVER['REQUEST_URI'], 'logout') !== false) {
 		session_unset();
 		session_destroy();
-		header('Location: /admin login.php');
+		header('Location: http://localhost/Main%20Page/admin login.php');
 	}
 	// echo $_SESSION['username'];
 ?>
@@ -36,10 +36,10 @@ if (isset($_POST['login'])){
     }
 	if(count($output)==1 && (strcmp($output[0]['password'],$password)==0))
 	{
-		header('Location: /index.php');
+		header('Location: http://localhost/Main%20Page/index.php');
 		exit();
     }
-	header('Location: /main login.php?id=405');
+	header('Location: http://localhost/Main%20Page/main login.php?id=405');
 }
 ?>
 
