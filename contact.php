@@ -115,7 +115,6 @@
 						</nav>
 					</div>
 					<!-- //toggle switch for light and dark theme -->
-				</div>
 
 				<!-- Drop Down for User details -->
 				<nav id="colorNav">

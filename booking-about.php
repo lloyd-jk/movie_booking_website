@@ -120,7 +120,6 @@
 					</nav>
 				</div>
 				<!-- //toggle switch for light and dark theme -->
-			</div>
 
 			<!-- Drop Down for User details -->
 				<nav id="colorNav">
@@ -136,6 +135,7 @@
 							</ul>
 						</li>
 					</ul>
+			<!-- </div> -->
 				</nav>
 				<!-- Drop down ends -->	
 
@@ -225,7 +225,7 @@
                         }
 
                         // Close connection
-                        mysqli_close($link);
+                        // mysqli_close($link);
                         ?>
 
 						<?php
@@ -329,18 +329,24 @@
                                         $pNumberErr = 'Phone Number can only contain numbers and white spaces';
                                         echo "<script type='text/javascript'>alert('$pNumberErr');</script>";
                                     }
+                                    
+                                    
+                                    $id = $_GET['id'];
+                                    $link = mysqli_connect("localhost", "root", "", "project");
 
-                                    $insert_query = "INSERT INTO 
-                        booking      (  movie_title,
-                                        theatre_name,
-                                        show_time,
-                                        show_date
-                                     )
-                        VALUES (        '" . $row['movie_title'] . "',
-                                        '" . $_POST["theatre"] . "',
-                                        '" . $_POST["hour"] . "',
-                                        '" . $_POST["date"] . "')";
-                                    mysqli_query($link, $insert_query);
+                                    $movieQuery = "SELECT * FROM movie WHERE movie_id = $id";
+                                    $movieImageById = mysqli_query($link, $movieQuery);
+                                    $row2 = mysqli_fetch_array($movieImageById);
+
+    
+    
+
+                        
+                                    $insert_query = "INSERT INTO `booking` (`booking_id`, `movie_title`, `show_time`, `show_date`, `theatre_name`, `username`) VALUES (NULL, '" . $row2['movie_title'] ."', '" . $_POST["hour"] . "', '" . $_POST["date"] . "', '" . $_POST["theatre"] . "', '" . $_SESSION['username'] ."')";
+                                    // mysqli_query($link, $insert_query);
+                                    if (!(mysqli_query($link, $insert_query))) {
+                                        echo mysqli_error($link);
+                                    }
                                 }
                                 ?>
 							</form>
