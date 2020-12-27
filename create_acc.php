@@ -16,11 +16,11 @@
 		$sql = "INSERT INTO login (name,username,password) VALUES('$name','$username','$password')";
 
 		if (!(mysqli_query($conn, $sql))) {
-			header('Location: http://localhost/Main%20Page/create_acc.php?id=404');
+			header('Location: /create_acc.php?id=404');
 			exit();
 		} else {
 			$_SESSION['username']=$username;
-			header('Location: http://localhost/Main%20Page/index.php');
+			header('Location: /index.php');
 			exit();
 		}
 }
