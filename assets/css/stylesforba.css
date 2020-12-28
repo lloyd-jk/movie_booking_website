@@ -1,0 +1,96 @@
+.nameinput{
+
+padding:8px;
+display:block;
+border:none;
+border-bottom:1px 
+solid #ccc;
+width:75%;
+}
+
+.phonenameinput{
+
+padding:8px;
+display:block;
+border:none;
+border-bottom:1px 
+solid #ccc;
+width:50%;
+}
+
+.bookbutton {
+  position: absolute;
+  top: 450px;
+  right: 250px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #df0e62;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.bookbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bookbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bookbutton:hover span {
+  padding-right: 25px;
+}
+
+.bookbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.movietitle
+{
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.selectcsstime
+{
+	text-align: center;
+	position: absolute;
+	right: 160px;
+}
+
+.selectcssdate
+{
+	text-align: center;
+	position: absolute;
+	right: 260px;
+}
+
+.selectcsstype
+{
+	text-align: center;
+	position: absolute;
+	right: 435px;
+}
+
+.selectcss
+{
+	text-align: center;
+	}
+

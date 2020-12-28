@@ -14056,6 +14056,7 @@ html {
 button,
 input,
 select {
+  background: var(--theme-lite);
   -webkit-appearance: none;
   outline: none;
   font-family: 'Open Sans', sans-serif;
@@ -14285,6 +14286,7 @@ body a {
   border-radius: 6px;
   background-color: var(--theme-rose);
   border: 2px solid var(--theme-rose);
+ 
 }
 
 .read-button:hover {
