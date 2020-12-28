@@ -19,7 +19,7 @@
             exit();
         } else {
             $_SESSION['username']=$username;
-            header('Location: http://localhost/Main%20Page/index.php');
+            header('Location: http://localhost/Main%20Page/select_theatre.php');
             exit();
         }
 }
