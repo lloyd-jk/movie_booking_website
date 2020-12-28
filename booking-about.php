@@ -4,25 +4,17 @@
         $_SESSION['username']='guest';
     }
 ?>
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
 <!doctype html>
 <html lang="zxx">
 
 <head>
-	<!-- Required meta tags -->
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>DBMS</title>
-	<!-- Template CSS -->
+	<title>Book Your Shows!</title>
 	<link rel="stylesheet" href="assets/css/style-starter.css">
-	<!-- Template CSS -->
 	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="stylesforba.css">
-	<!-- Template CSS -->
 	<!-- DROPDOWNN -->
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="assets/css/styles.css" />
@@ -30,6 +22,11 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
+<style>
+	body{
+		overflow-x:hidden;
+	}
+</style>
 
 	<?php
 	$id = $_GET['id'];
@@ -45,7 +42,7 @@ Author URL: http://w3layouts.com
 		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
-						DBMS </a></h1>
+				BookYourShows</a></h1>
 				<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -58,16 +55,12 @@ Author URL: http://w3layouts.com
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.php">Home</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.php">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.php">About</a>
+							<a class="nav-link" href="mybooking.php">My Bookings</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="genre.php">Genre</a>
-						</li>
-
 						<li class="nav-item">
 							<a class="nav-link" href="contact.php">Contact</a>
 						</li>
@@ -174,8 +167,8 @@ Author URL: http://w3layouts.com
 				<div class="col-lg-6 ab-left pl-lg-4 mt-lg-0 mt-5">
 					<br><br><br><br><br>
 					<div style="margin-left:80px;">
-					<h3 class="hny-title">Reserve Your Ticket</h3>
-					<p class="mt-3">Enter the details and book your ticket.</p>
+					<h3 class="hny-title" style = "font-size: 40px;position: relative;left: -46px;">Reserve Your Ticket</h3>
+					<br>
 					</div>
 					
 					<!-- <div class="booking-panel-section booking-panel-section3">
@@ -184,8 +177,19 @@ Author URL: http://w3layouts.com
             </div>
         </div> -->
 					<div >
-						<div class="movietitle" style="margin-left:80px;"><?php echo $row['movie_title']; ?></div>
+						<div class="movietitle" style="margin-left:80px;font-size: 40px"><?php echo $row['movie_title']; ?></div>
 						<div>
+							<style>
+								table tr td:empty {
+									width: 50px;
+									}
+									
+									table tr td {
+									padding-top: 5px;
+									padding-bottom: 5px;
+									padding-right:20px
+									}
+							</style>
 							<table style="margin-left:80px;">
 								<tr>
 									<td>GENRE        :</td>

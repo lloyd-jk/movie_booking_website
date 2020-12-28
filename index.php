@@ -26,8 +26,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film"
-							aria-hidden="true"></span>
-						DBMS </a></h1>
+							aria-hidden="true"></span> BookYourShow </a></h1>
 				<!-- if logo is image enable this   
 						<a class="navbar-brand" href="#index.html">
 							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -46,11 +45,11 @@
 							<a class="nav-link" href="index.php">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.php">About</a>
+							<a class="nav-link" href="mybooking.php">My Bookings</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link" href="genre.php">Genre</a>
-						</li>
+						</li> -->
 
 						<li class="nav-item">
 							<a class="nav-link" href="contact.php">Contact</a>
@@ -143,9 +142,8 @@
 					<li>
 						<div class="slider-info banner-view bg bg2">
 							<div class="banner-info">
-								<h3>Latest Movie Trailers</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
-									voluptatem tenetur consequatur.</span></p>
+								<h3>Avengers End Game: Infinity War Reel</h3>
+								<p>After Thanos, an intergalactic warlord, disintegrates half of the universe, <span class="over-para"> the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</span></p>
 								<a href="#small-dialog1" class="popup-with-zoom-anim play-view1">
 									<span class="video-play-icon">
 										<span class="fa fa-play"></span>
@@ -165,9 +163,8 @@
 					<li>
 						<div class="slider-info  banner-view banner-top1 bg bg2">
 							<div class="banner-info">
-								<h3>Latest Online Movies</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
-									voluptatem tenetur consequatur.</span></p>
+								<h3>Frozen 2</h3>
+								<p>Queen Elsa starts hearing a mysterious melodic voice calling to her.<span class="over-para"> Unsettled, she answers it and that awakens the elemental spirits that lead her to a quest to restore an old injustice.</span></p>
 								<a href="#small-dialog2" class="popup-with-zoom-anim play-view1">
 									<span class="video-play-icon">
 										<span class="fa fa-play"></span>
@@ -187,9 +184,8 @@
 					<li>
 						<div class="slider-info banner-view banner-top2 bg bg2">
 							<div class="banner-info">
-								<h3>Latest Movie Trailers</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
-									voluptatem tenetur consequatur.</span></p>
+								<h3>Joker</h3>
+								<p>Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.<span class="over-para"> Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him.</span></p>
 								<a href="#small-dialog3" class="popup-with-zoom-anim play-view1">
 									<span class="video-play-icon">
 										<span class="fa fa-play"></span>
@@ -209,9 +205,8 @@
 					<li>
 						<div class="slider-info banner-view banner-top3 bg bg2">
 							<div class="banner-info">
-								<h3>Latest Online Movies</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
-									voluptatem tenetur consequatur.</span></p>
+								<h3>Aladdin</h3>
+								<p>Aladdin, a kind thief, woos Jasmine, the princess of Agrabah, with the help of Genie.<span class="over-para"> When Jafar, the grand vizier, tries to usurp the king, Jasmine, Aladdin and Genie must stop him from succeeding.</span></p>
 								<a href="#small-dialog4" class="popup-with-zoom-anim play-view1">
 									<span class="video-play-icon">
 										<span class="fa fa-play"></span>
@@ -230,106 +225,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- //banner-slider-->
-	<!-- main-slider -->
-	<!--grids-sec1-->
-	<section class="w3l-grids">
-		<div class="grids-main py-5">
-			<div class="container py-lg-3">
-				<div class="headerhny-title">
-					<div class="w3l-title-grids">
-						<div class="headerhny-left">
-							<h3 class="hny-title">Popular Movies</h3>
-						</div>
-						<div class="headerhny-right text-lg-right">
-							<h4><a class="show-title" href="genre.html">Show all</a></h4>
-						</div>
-					</div>
-				</div>
-				<div class="w3l-populohny-grids">
-					<div class="item vhny-grid">
-						<div class="box16">
-							<a href="genre.html">
-								<figure>
-									<img class="img-fluid" src="assets/images/m7.jpg" alt="">
-								</figure>
-								<div class="box-content">
-									<h3 class="title">Frozen 2</h3>
-									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
-
-										</span>
-
-										<span class="post fa fa-heart text-right"></span>
-									</h4>
-								</div>
-								<span class="fa fa-play video-icon" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-					<div class="item vhny-grid">
-						<div class="box16">
-							<a href="genre.html">
-								<figure>
-									<img class="img-fluid" src="assets/images/m3.jpg" alt="">
-								</figure>
-								<div class="box-content">
-									<h3 class="title">Knives Out</h3>
-									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
-
-										</span>
-
-										<span class="post fa fa-heart text-right"></span>
-									</h4>
-								</div>
-								<span class="fa fa-play video-icon" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-					<div class="item vhny-grid">
-						<div class="box16">
-							<a href="genre.html">
-								<figure>
-									<img class="img-fluid" src="assets/images/m4.jpg" alt="">
-								</figure>
-								<div class="box-content">
-									<h3 class="title">Little Women</h3>
-									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
-
-										</span>
-
-										<span class="post fa fa-heart text-right"></span>
-									</h4>
-								</div>
-								<span class="fa fa-play video-icon" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-					<div class="item vhny-grid">
-						<div class="box16">
-							<a href="genre.html">
-								<figure>
-									<img class="img-fluid" src="assets/images/m5.jpg" alt="">
-								</figure>
-								<div class="box-content">
-									<h3 class="title">Jumanji</h3>
-									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
-
-										</span>
-
-										<span class="post fa fa-heart text-right"></span>
-									</h4>
-								</div>
-								<span class="fa fa-play video-icon" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--//grids-sec1-->
-	<!--grids-sec2-->
-
+	
 	<?php
     $link = mysqli_connect("localhost", "root", "", "project");
     $sql = "SELECT * FROM movie";
@@ -341,15 +237,15 @@
 				<div class="headerhny-title">
 					<div class="w3l-title-grids">
 						<div class="headerhny-left">
-							<h3 class="hny-title">New Releases</h3>
+							<h3 class="hny-title">Book Your Tickets</h3>
 						</div>
-						<div class="headerhny-right text-lg-right">
+						<!-- <div class="headerhny-right text-lg-right">
 							<h4><a class="show-title" href="genre.html">Show all</a></h4>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="owl-three owl-carousel owl-theme">
-					<div class="item vhny-grid">
+					<!-- <div class="item vhny-grid">
 						<div class="box16 mb-0">
 							<a href="genre.html">
 								<figure>
@@ -372,7 +268,7 @@
 							<a href="genre.html" class="btn watch-button">Watch now</a>
 						</div>
 
-					</div>
+					</div> -->
 
 
 					<?php
@@ -509,7 +405,7 @@
 	</section>
 	<!--grids-sec2-->
 	<!--mid-slider -->
-	<section class="w3l-mid-slider position-relative">
+	<!-- <section class="w3l-mid-slider position-relative">
 		<div class="companies20-content">
 			<div class="owl-mid owl-carousel owl-theme">
 				<div class="item">
@@ -562,26 +458,27 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- //mid-slider-->
 	<!--/tabs-->
-	<section class="w3l-albums py-5" id="projects">
-		<div class="container py-lg-4">
-			<div class="row">
-				<div class="col-lg-12 mx-auto">
+	<!-- <section class="w3l-albums py-5" id="projects"> -->
+		<!-- <div class="container py-lg-4"> -->
+			<!-- <div class="row"> -->
+				<!-- <div class="col-lg-12 mx-auto"> -->
 					<!--Horizontal Tab-->
-					<div id="parentHorizontalTab">
-						<ul class="resp-tabs-list hor_1">
+					<!-- <div id="parentHorizontalTab"> -->
+						<!-- <ul class="resp-tabs-list hor_1">
 							<li>Recent Movies</li>
 							<li>Popular Movies</li>
 							<li>Trend Movies</li>
 							<div class="clear"></div>
-						</ul>
+						</ul> -->
+						<!-- <a class="author-book-title" href="#">All Movies</a>
 						<div class="resp-tabs-container hor_1">
 							<div class="albums-content">
-								<div class="row">
+								<div class="row"> -->
 									<!--/set1-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html">
@@ -655,9 +552,9 @@
 										</div>
 
 									</div>
-									<!--//set1-->
+									//set1-->
 									<!--/set1-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/m1.jpg" class="img-fluid"
@@ -728,10 +625,10 @@
 											</div>
 										</div>
 
-									</div>
+									</div> -->
 									<!--//set1-->
 									<!--/set1-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/n1.jpg" class="img-fluid"
@@ -742,9 +639,9 @@
 											<div class="message">
 												<p>English</p>
 												<a class="author-book-title" href="genre.html">No Time to Die</a>
-												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min -->
 
-													</span>
+													<!-- </span>
 
 													<span class="post fa fa-heart text-right"></span>
 												</h4>
@@ -776,8 +673,8 @@
 										</div>
 
 									</div>
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
-										<div class="slider-info">
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0"> -->
+										<!-- <div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/n3.jpg" class="img-fluid"
 														alt="author image">
@@ -797,16 +694,16 @@
 													<span class="post fa fa-heart text-right"></span>
 												</h4>
 											</div>
-										</div>
+										</div> -->
 
 									</div>
 									<!--//set1-->
-								</div>
+								<!-- </div>
 							</div>
 							<div class="albums-content">
-								<div class="row">
+								<div class="row"> -->
 									<!--/set1-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/m1.jpg" class="img-fluid"
@@ -839,8 +736,8 @@
 
 														<span class="fa fa-play video-icon" aria-hidden="true"></span>
 													</div>
-												</a>
-											</div>
+												</a> -->
+											<!-- </div>
 											<div class="message">
 												<p>English</p>
 												<a class="author-book-title" href="genre.html">Doctor Sleep</a>
@@ -877,10 +774,10 @@
 											</div>
 										</div>
 
-									</div>
+									</div> -->
 									<!--//set1-->
 									<!--/set2-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/m7.jpg" class="img-fluid"
@@ -917,8 +814,8 @@
 											</div>
 											<div class="message">
 												<p>English</p>
-												<a class="author-book-title" href="genre.html">Toy Story 4</a>
-												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+												<a class="author-book-title" href="genre.html">Toy Story 4</a> -->
+												<!-- <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
 
 													</span>
 
@@ -942,23 +839,23 @@
 											<div class="message">
 												<p>English</p>
 												<a class="author-book-title" href="genre.html">Joker</a>
-												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min -->
+<!-- 
 													</span>
 
 													<span class="post fa fa-heart text-right"></span>
 												</h4>
 											</div>
-										</div>
+										</div> -->
 
-									</div>
+									<!-- </div> -->
 									<!--//set2-->
-								</div>
+								<!-- </div>
 							</div>
 							<div class="albums-content">
-								<div class="row">
+								<div class="row"> -->
 									<!--/set3-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/m7.jpg" class="img-fluid"
@@ -998,8 +895,8 @@
 												<a class="author-book-title" href="genre.html">Toy Story 4</a>
 												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
 
-													</span>
-
+													</span> -->
+<!-- 
 													<span class="post fa fa-heart text-right"></span>
 												</h4>
 											</div>
@@ -1029,10 +926,10 @@
 											</div>
 										</div>
 
-									</div>
+									</div> -->
 									<!--//set3-->
 									<!--/set3-->
-									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+									<!-- <div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
 										<div class="slider-info">
 											<div class="img-circle">
 												<a href="genre.html"><img src="assets/images/m10.jpg" class="img-fluid"
@@ -1103,16 +1000,16 @@
 											</div>
 										</div>
 
-									</div>
+									</div> -->
 									<!--//set3-->
-								</div>
+								<!-- </div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>  -->
 	<!-- //tabs-->
 	<!-- footer-66 -->
 	<footer class="w3l-footer">
@@ -1123,23 +1020,23 @@
 						<div class="right-side">
 							<div class="row footer-about">
 								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="genre.html"><img class="img-fluid" src="assets/images/banner1.jpg"
-											alt=""></a>
+									<img class="img-fluid" src="assets/images/banner1.jpg"
+											alt="">
 								</div>
 								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="genre.html"><img class="img-fluid" src="assets/images/banner2.jpg"
-											alt=""></a>
+									<img class="img-fluid" src="assets/images/banner2.jpg"
+											alt="">
 								</div>
 								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="genre.html"><img class="img-fluid" src="assets/images/banner3.jpg"
-											alt=""></a>
+									<img class="img-fluid" src="assets/images/banner3.jpg"
+											alt="">
 								</div>
 								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="genre.html"><img class="img-fluid" src="assets/images/banner4.jpg"
-											alt=""></a>
+									<img class="img-fluid" src="assets/images/banner4.jpg"
+											alt="">
 								</div>
 							</div>
-							<div class="row footer-links">
+							<!-- <div class="row footer-links">
 
 
 								
@@ -1162,7 +1059,7 @@
 									<p>Enter your email and receive the latest news, updates and special offers from us.
 									</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -1172,21 +1069,8 @@
 				<div class="container">
 					<div class="copyright-footer">
 						<div class="columns text-lg-left">
-							<p>&copy; 2020 ProShowz. All rights reserved | Designed by <a
-									href="https://w3layouts.com">W3layouts</a></p>
+							<p> Designed by Group XVII</p>
 						</div>
-
-						<ul class="social text-lg-right">
-							<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-							</li>
-
-						</ul>
 					</div>
 				</div>
 			</div>

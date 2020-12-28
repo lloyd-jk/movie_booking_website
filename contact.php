@@ -28,7 +28,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
 					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
-						DBMS </a></h1>
+						BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -47,10 +47,7 @@
 								<a class="nav-link" href="index.php">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="about.php">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="genre.php">Genre</a>
+								<a class="nav-link" href="mybooking.php">My Bookings</a>
 							</li>
 							<li class="nav-item active">
 								<a class="nav-link" href="contact.php">Contact</a>
@@ -192,7 +189,7 @@
 						</div>
 						<div class="contact-details">
 							<h4>Address:</h4>
-							<p>Lorem dolor sit, New York, USA</p>
+							<p>CSE Department, National Institute of Technology Calicut, Kerala</p>
 						</div>
 					</div>
 					<div class="contact-info">
@@ -201,8 +198,8 @@
 						</div>
 						<div class="contact-details">
 							<h4>Phone:</h4>
-							<p><a href="tel:+598-658-456">+598-658-346</a></p>
-							<p><a href="tel:+598-658-457">+598-658-436</a></p>
+							<p><a href="tel:+598-658-456">+91-98702-32344</a></p>
+							<p><a href="tel:+598-658-457">+91-96234-22436</a></p>
 						</div>
 					</div>
 					<div class="contact-info">
@@ -211,17 +208,14 @@
 						</div>
 						<div class="contact-details">
 							<h4>Mail:</h4>
-							<p><a href="mailto:mail@example.com" class="email">info@proshowz.com</a></p>
-							<p><a href="mailto:mail@example.com" class="email">proshowz@support.com</a></p>
+							<p><a href="mailto:mail@example.com" class="email">bookyourshow@support.com</a></p>
+							<!-- <p><a href="mailto:mail@example.com" class="email">p@support.com</a></p> -->
 						</div>
 					</div>
 				</div>
 			</div>
 			</div>
 		  </div>
-		</div>
-		<div class="contact-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563262564932!5m2!1sen!2sin" style="border:0" allowfullscreen=""></iframe>
 		</div>
 	  </section>
 	  <!-- /contact1 -->
@@ -250,7 +244,7 @@
 											alt=""></a>
 								</div>
 							</div>
-							<div class="row footer-links">
+							<!-- <div class="row footer-links">
 
 
 								
@@ -273,7 +267,7 @@
 									<p>Enter your email and receive the latest news, updates and special offers from us.
 									</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -283,21 +277,8 @@
 				<div class="container">
 					<div class="copyright-footer">
 						<div class="columns text-lg-left">
-							<p>&copy; 2020 ProShowz. All rights reserved | Designed by <a
-									href="https://w3layouts.com">W3layouts</a></p>
+							<p>Designed by Group XVII</p>
 						</div>
-
-						<ul class="social text-lg-right">
-							<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-							</li>
-
-						</ul>
 					</div>
 				</div>
 			</div>
