@@ -14,21 +14,11 @@ mysqli_select_db($connect,'project') or die(mysqli_error($connect));
 
 <?php
 
-$temp=$_SESSION['username'];
+$temp = $_SESSION['username'] ;
 
-$sql = "DELETE FROM booking "; 
+$sql = "SELECT * FROM booking LEFT JOIN movie ON booking.movie_title=movie.movie_title WHERE username='$temp' " ;
 
-if(isset($_POST['delete'])) {
-
-    $delete_term = $connect -> real_escape_string($_POST['delete_box']);
-    $sql .= "WHERE booking_id = '{$delete_term}'";
-}
-
-$query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
-//
-//$sql = mysqli_query($connect,"SELECT * FROM student WHERE rollno = '$search_term'");
-
-
+$query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 ?>
 
 <!doctype html>
@@ -171,18 +161,65 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 				<div class="headerhny-title">
 					<div class="w3l-title-grids">
 						<div class="headerhny-left">
-						<h3 class="hny-title"><?php echo $temp . ", your booking with ID number: " . $delete_term . " has been cancelled. Please refresh to go back to previous page."; ?></h3>
-                        <a href="booked.php">CLick here to go back to the booked tickets page</a>
+						<h3 class="hny-title"><?php echo "Hello ". $temp . " !"; ?></h3>
+							<h3 class="hny-title">Shows you have booked</h3>
 						</div>
 						<!--<div class="headerhny-right text-lg-right">
 							<h4><a class="show-title" href="genre.html">Show all</a></h4>
 						</div>-->
 					</div>
                 </div><br><br><br>
+				<?php while ($row = mysqli_fetch_array($query)) {  ?>
+					<section>
+				<div class="w3l-populohny-grids">
+					<div class="item vhny-grid">
+						<div class="box16">
+							<section>
+							<a href="genre.html">
+								<figure>
+									<img class="container" src="<?php echo $row['movie_img']; ?>" alt="<?php echo $row['movie_title']; ?>" width="300" height="300">
+								</figure><br></section><section>
+									<div class="middle">
+                                    <h6 class="title" ><?php echo "Booking ID:". $row['booking_id']; ?></h6>
+                                    <h6 class="title" ><?php echo "Movie:". $row['movie_title']; ?></h6>
+                                    <h6 class="title" ><?php echo "Theatre Name:". $row['theatre_name']; ?></h6>
+                                    <h6 class="title" ><?php echo "Show Time:". $row['show_time']. " hours"; ?></h6>
+                                    <h6 class="title" ><?php echo "Show date:". $row['show_date']; ?></h6></section>
+									<h4> <span class="post" ><span class="fa fa-clock-o"> </span><?php echo $row['movie_duration']. "Minutes"; ?>
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+                    </div><br><br><br></section>
+                    <?php } ?>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+	<section class="w3l-grids">
+		<div class="grids-main py-5">
+			<div class="container py-lg-3">
+				<div class="headerhny-title">
+					<div class="w3l-title-grids">
+						<div class="headerhny-left">
+							<h3 class="hny-title"> <form name="delete_form" method="POST" action="cancelbooking.php"> Want to cancel any booking? <br><br> Enter the booking ID you want to cancel: <br><br> <input type="text" name="delete_box" /> 
+            <br><br><input type="submit" name="delete" value="Cancel booking."> </form> </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--//grids-sec1-->
+	<!--grids-sec2-->
 
 	<?php
     $link = mysqli_connect("localhost", "root", "", "project");
@@ -295,11 +332,6 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 		</section>
 	</footer>
 	<!--//footer-66 -->
-<!--
-    <?php
-    header("refresh:2; booked.php");
-    ?>
--->
 </body>
 
 </html>
