@@ -51,8 +51,7 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film"
-							aria-hidden="true"></span>
-							BookYourShow </a></h1>
+							aria-hidden="true"></span> BookYourShow </a></h1>
 				<!-- if logo is image enable this   
 						<a class="navbar-brand" href="#index.html">
 							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -71,11 +70,11 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 							<a class="nav-link" href="index.php">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.php">About</a>
+							<a class="nav-link" href="mybooking.php">My Bookings</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link" href="genre.php">Genre</a>
-						</li>
+						</li> -->
 
 						<li class="nav-item">
 							<a class="nav-link" href="contact.php">Contact</a>
@@ -84,9 +83,9 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 
 					<!--/search-right-->
 					<!--/search-right-->
-					<!-- <div class="search-right">
-						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
-								class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
+					<!-- <div class="search-right"> -->
+						<!-- <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span -->
+								<!-- class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
 						<!-- search popup -->
 						<!-- <div id="search" class="pop-overlay">
 							<div class="popup">
@@ -111,7 +110,7 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 										<li><a href="genre.html">Drama</a></li>
 										<li><a href="genre.html">Family</a></li>
 										<li><a href="genre.html">Thriller</a></li>
-										<li><a href="genre.html">Comedy</a></li>
+										<li><a href="genre.html">Commedy</a></li>
 										<li><a href="genre.html">Romantic</a></li>
 										<li><a href="genre.html">Tv-Series</a></li>
 										<li><a href="genre.html">Horror</a></li>
@@ -158,20 +157,21 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 				<!-- Drop down ends -->
 			
 		</nav>
-    </header>
+	</header>
 
 
 
 	<!-- //banner-slider-->
 	<!-- main-slider -->
 	<!--grids-sec1-->
-	<section class="w3l-grids">
+	<br><br><br><br><br><br><br>
+	<section class="w3l-grids" style="text-align:center;position:relative;left:300px">
 		<div class="grids-main py-5">
 			<div class="container py-lg-3">
 				<div class="headerhny-title">
 					<div class="w3l-title-grids">
 						<div class="headerhny-left">
-						<h3 class="hny-title"><?php echo $temp . ", your booking with ID number: " . $delete_term . " has been cancelled. Please refresh to go back to previous page."; ?></h3>
+						<h3 class="hny-title"><?php echo $temp . ", your booking with ID number: " . $delete_term . " has been cancelled."; ?></h3>
                         <a href="booked.php">CLick here to go back to the booked tickets page</a>
 						</div>
 						<!--<div class="headerhny-right text-lg-right">
@@ -190,13 +190,13 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
     ?>
 	<!-- //tabs-->
 	<!-- footer-66 -->
-	<footer class="w3l-footer">
+	<!-- <footer class="w3l-footer">
 		<section class="footer-inner-main">
 			<div class="footer-hny-grids py-5">
 				<div class="container py-lg-4">
 					<div class="text-txt">
-						<div class="right-side">
-							<div class="row footer-about">
+						<div class="right-side"> -->
+							<!-- <div class="row footer-about">
 								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
 									<a href="genre.html"><img class="img-fluid" src="assets/images/banner1.jpg"
 											alt=""></a>
@@ -214,11 +214,11 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 											alt=""></a>
 								</div>
 							</div>
-							<div class="row footer-links">
+							<div class="row footer-links"> -->
 
 
 								
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
+								<!-- <div class="col-md-3 col-sm-6 sub-two-right mt-5">
 									<h6>Information</h6>
 									<ul>
 										<li><a href="index.php">Home</a> </li>
@@ -236,41 +236,29 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 									</form>
 									<p>Enter your email and receive the latest news, updates and special offers from us.
 									</p>
-								</div>
-							</div>
+								</div> -->
+							<!-- </div>
 						</div>
 					</div>
 				</div>
 			</div>
 			</div>
-			<div class="below-section">
+			<br><br> -->
+			<!-- <div class="below-section">
 				<div class="container">
 					<div class="copyright-footer">
 						<div class="columns text-lg-left">
-							<p>&copy; 2020 ProShowz. All rights reserved | Designed by <a
-									href="https://w3layouts.com">W3layouts</a></p>
+							<p> Designed by Group XVII</p>
 						</div>
-
-						<ul class="social text-lg-right">
-							<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-							</li>
-
-						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- copyright -->
 			<!-- move top -->
-			<button onclick="topFunction()" id="movetop" title="Go to top">
+			<!-- <button onclick="topFunction()" id="movetop" title="Go to top">
 				<span class="fa fa-arrow-up" aria-hidden="true"></span>
-			</button>
-			<script>
+			</button> -->
+			<!-- <script>
 				// When the user scrolls down 20px from the top of the document, show the button
 				window.onscroll = function () {
 					scrollFunction()
@@ -289,11 +277,11 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect,$sql));
 					document.body.scrollTop = 0;
 					document.documentElement.scrollTop = 0;
 				}
-			</script>
+			</script> -->
 			<!-- /move top -->
 
-		</section>
-	</footer>
+		<!-- </section> -->
+	<!-- </footer> -->
 	<!--//footer-66 -->
 <!--
     <?php
