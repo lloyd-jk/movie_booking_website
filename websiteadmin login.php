@@ -36,10 +36,10 @@ if (isset($_POST['login'])){
     }
 	if(count($output)==1 && (strcmp($output[0]['password'],$password)==0))
 	{
-		header('Location: http://localhost/Main%20Page/index.php');
+		header('Location: http://localhost/Main%20Page/movie_admin.php');
 		exit();
     }
-	header('Location: http://localhost/Main%20Page/main login.php?id=405');
+	header('Location: http://localhost/Main%20Page/websiteadmin login.php?id=405');
 }
 ?>
 
