@@ -52,11 +52,11 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 							<li class="nav-item">
 								<a class="nav-link" href="theatre_admin.php">Theatre</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item active">
 								<a class="nav-link" href="movie_admin.php">Movies</a>
 							</li>
                             <li class="nav-item">
-								<a class="nav-link" href="#">View Bookings</a>
+								<a class="nav-link" href="all_bookings.php">View Bookings</a>
 							</li>
 						</ul>
 	
