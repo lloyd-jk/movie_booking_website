@@ -166,7 +166,7 @@ if ($result = mysqli_query($link1, $sql1)) {
 										<div class="row">
 											<div class="col-lg-2"></div>
 											<div class="col-lg-8 pl-5 ml-5">
-												<select class="form-input select" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);color: var(--theme-para);height: 55px;padding: 15px;font-size: 16px;" name="username" required >
+												<select class="form-input select" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);color: var(--theme-para);height: 55px;padding: 15px;font-size: 16px; position:relative; left: 40px;" name="username" required >
 														<option value="" disabled selected>Username</option>
 														<?php
 														if ($result = mysqli_query($link1, $sql1)) {
