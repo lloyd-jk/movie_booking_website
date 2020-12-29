@@ -50,13 +50,13 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="theatre_admin.php">Theatre</a>
+								<a class="nav-link active" href="theatre_admin.php">Theatre</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="movie_admin.php">Movies</a>
 							</li>
                             <li class="nav-item">
-								<a class="nav-link" href="#">View Bookings</a>
+								<a class="nav-link" href="all_bookings.php">View Bookings</a>
 							</li>
 						</ul>
 	
