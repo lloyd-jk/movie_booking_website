@@ -122,8 +122,6 @@ if ($result = mysqli_query($link1, $sql1)) {
 			<nav id="breadcrumbs" class="breadcrumbs">
 				<div class="container page-wrapper">
 				<a href="select_theatre.php">Home</a> » <span class="breadcrumb_last" aria-current="page">Select Theatre</span>
-				<h5 style="float:right;font-family: 'Open Sans', sans-serif; font-weight: 400;"><i class="fa fa-lock" aria-hidden="true"></i>
-Admin Panel</h5>
 				</div>
 			</nav>
 		</div>
