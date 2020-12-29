@@ -58,7 +58,7 @@ if ($result = mysqli_query($link1, $sql1)) {
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
 					<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
-						DBMS </a></h1>
+					BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -73,10 +73,11 @@ if ($result = mysqli_query($link1, $sql1)) {
 	
 						<!--/search-right-->
 						<!--/search-right-->
-						<div class="search-right">
+						<!-- <div class="search-right"> -->
+						
 							<!-- /search popup -->
 							<!--/search-right-->
-						</div>
+						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
@@ -93,6 +94,7 @@ if ($result = mysqli_query($link1, $sql1)) {
 							</div>
 						</nav>
 					</div>
+					
 					<!-- //toggle switch for light and dark theme -->
 
 				<!-- Drop Down for User details -->
@@ -116,14 +118,15 @@ if ($result = mysqli_query($link1, $sql1)) {
 		</header>
 		<!-- //header -->
 		<!--/breadcrumbs -->
-	<div class="w3l-breadcrumbs">
-		<nav id="breadcrumbs" class="breadcrumbs">
-			<div class="container page-wrapper">
+		<div class="w3l-breadcrumbs">
+			<nav id="breadcrumbs" class="breadcrumbs">
+				<div class="container page-wrapper">
+				<a href="select_theatre.php">Home</a> » <span class="breadcrumb_last" aria-current="page">Select Theatre</span>
 				<h5 style="float:right;font-family: 'Open Sans', sans-serif; font-weight: 400;"><i class="fa fa-lock" aria-hidden="true"></i>
 Admin Panel</h5>
-			</div>
-		</nav>
-	</div>
+				</div>
+			</nav>
+		</div>
 
     <section class="w3l-contact-1">
         <div class="contacts-9 py-5">
@@ -138,8 +141,8 @@ Admin Panel</h5>
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8">
                                 <form action="admin_func.php" method="POST" >
-                                    <div class="select left">
-										<select name="tName" required >
+                                    <!-- <div class="select left"> -->
+										<select  style ="background: var(--theme-lite);border: 1px solid var(--theme-border);     border-radius: 6px;width: 125px;height: 55px;color: var(--theme-para);    padding: 14px;margin-left: 300px;" name="tName" required >
 											<option value="" disabled selected>THEATER</option>
 											<?php
 											if ($result = mysqli_query($link1, $sql1)) {
@@ -164,7 +167,7 @@ Admin Panel</h5>
 											?>
 
 										</select>
-                                    </div>
+                                    <!-- </div> -->
 
                                     <div class="submithny text-center mt-5">
                                         <button type="submit" name="login" class="btn btn-primary">Select</button>

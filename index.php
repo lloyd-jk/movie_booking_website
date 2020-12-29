@@ -58,11 +58,11 @@
 
 					<!--/search-right-->
 					<!--/search-right-->
-					<div class="search-right">
-						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
-								class="fa fa-search ml-3" aria-hidden="true"></span></a>
+					<!-- <div class="search-right"> -->
+						<!-- <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span -->
+								<!-- class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
 						<!-- search popup -->
-						<div id="search" class="pop-overlay">
+						<!-- <div id="search" class="pop-overlay">
 							<div class="popup">
 								<form action="#" method="post" class="search-box">
 									<input type="search" placeholder="Search your Keyword" name="search"
@@ -93,10 +93,10 @@
 								</div>
 							</div>
 							<a class="close" href="#close">×</a>
-						</div>
+						</div> -->
 						<!-- /search popup -->
 						<!--/search-right-->
-					</div>
+					<!-- </div> -->
 
 				</div>
 				<!-- toggle switch for light and dark theme -->
@@ -123,7 +123,7 @@
 								<li><a href="http://localhost/Main%20Page/main login.php">Hello,
 									<?php echo $_SESSION['username']?>
 								</a></li>
-								<li><a href="#">Setting</a></li>
+								<!-- <li><a href="#">Setting</a></li> -->
 								<li><a href="http://localhost/Main%20Page/main login.php?logout=true">Logout</a></li>
 							</ul>
 						</li>
@@ -283,7 +283,7 @@
                                                 echo '</div>';
                                                 echo '<div class="movie-info ">';
                                                 echo '<h3>' . $row['movie_title'] . '</h3>';
-                                                echo '<a href="booking-about.php?id=' . $row['movie_id'] . '"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
+                                                echo '<div class="button-center text-center mt-4"> <a class="btn watch-button" href="booking-about.php?id=' . $row['movie_id'] . '"> Book a seat</a></div>';
                                                 
                                                 echo '</div>';
                                                 echo '</div>';

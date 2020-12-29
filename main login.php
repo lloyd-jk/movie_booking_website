@@ -73,20 +73,21 @@ if (isset($_POST['login'])){
 	<div class="layer">
 		
 		<div class="bottom-grid">
-			<div class="logo">
-				<h1> <a href="index.html"><span class="fa fa-key"></span> Key</a></h1>
-			</div>
+			<span></span>
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="active">
 						<a href="admin login.php" class="">Admin login</a>
 					</li>
-					<li class="">
-						<a href="about.php" class="">About Us</a>
+					<li class="active">
+						<a href="websiteadmin login.php" class="">Website Admin login</a>
 					</li>
 					<li class="">
+						<a href="http://localhost/Main%20Page/index.php" class="">Browse</a>
+					</li>
+					<!-- <li class="">
 						<a href="create_acc.php" class="">Register</a>
-					</li>
+					</li> -->
 					<li class="">
 						<a href="contact.php" class="">Contact</a>
 					</li>
@@ -129,16 +130,17 @@ if (isset($_POST['login'])){
 						<button type="submit" name="login" class="btn">Login</button>
 					</div>
 					<ul class="list-login">
-						<li class="switch-agileits">
+						<!-- <li class="switch-agileits">
 							<label class="switch">
 								<input type="checkbox">
 								<span class="slider round"></span>
 								keep Logged in
 							</label>
-						</li>
-						<li>
+						</li> -->
+						<span></span>
+						<!-- <li>
 							<a href="#" class="text-right">forgot password?</a>
-						</li>
+						</li> -->
 						<li class="clearfix"></li>
 					</ul>
 					<ul class="list-login-bottom">
@@ -146,14 +148,15 @@ if (isset($_POST['login'])){
 							<a href="create_acc.php" class="">Create Account</a>
 						</li>
 						<li class="">
-							<a href="#" class="text-right">Need Help?</a>
+							<a href="http://localhost/Main%20Page/contact.php" class="text-right">Need Help?</a>
 						</li>
 						<li class="clearfix"></li>
 					</ul>
 				</form>
 			</div>
 		</div>
-		<div class="bottom-grid1">
+		<span></span>
+		<!-- <div class="bottom-grid1">
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="">
@@ -167,7 +170,7 @@ if (isset($_POST['login'])){
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
     </div>
 </section>
 
