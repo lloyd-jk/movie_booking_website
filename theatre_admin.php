@@ -12,6 +12,27 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 
 ?>
 
+<?php
+$link1 = mysqli_connect("localhost", "root", "", "project");
+$sql1 = "SELECT * FROM admin_login";
+?>
+
+
+<?php
+if ($result = mysqli_query($link1, $sql1)) {
+    if (mysqli_num_rows($result) > 0) {
+        mysqli_free_result($result);
+    } else {
+        echo '<h4 class="no-annot">No users to add</h4>';
+    }
+} else {
+    echo "ERROR: Could not able to execute $sql1. " . mysqli_error($link1);
+}
+
+// Close connection
+// mysqli_close($link);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,13 +71,13 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link active" href="theatre_admin.php">Theatre</a>
+								<a class="nav-link" href="theatre_admin.php">Theatre</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="movie_admin.php">Movies</a>
 							</li>
                             <li class="nav-item">
-								<a class="nav-link" href="all_bookings.php">View Bookings</a>
+								<a class="nav-link" href="#">View Bookings</a>
 							</li>
 						</ul>
 	
@@ -141,13 +162,40 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
                                         <div class="form-input">
                                             <input type="text" name="location" id="genre" placeholder="Enter Location *" required />
                                         </div>
-                                    </div>
-									<div class="form-input mt-4">
-                                        <input type="email" name="admin_name" id="location" placeholder="Enter name of Admin, theatre is assigned to *"
-                                            required />
-                                    </div>
-                                    <div class="submithny text-right mt-4">
-                                        <button class="btn read-button">Submit Details</button>
+                                    </div><br>
+										<div class="row">
+											<div class="col-lg-2"></div>
+											<div class="col-lg-8 pl-5 ml-5">
+												<select class="form-input select" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);color: var(--theme-para);height: 55px;padding: 15px;font-size: 16px;" name="username" required >
+														<option value="" disabled selected>Username</option>
+														<?php
+														if ($result = mysqli_query($link1, $sql1)) {
+															if (mysqli_num_rows($result) > 0) {
+																$num = mysqli_num_rows($result);
+																for ($i = 0; $i < $num; $i++) {
+																	$row = mysqli_fetch_array($result);
+
+
+																	echo  '<option value="' . $row['username'] . '">' . $row['username'] . '</option>';
+																}
+																mysqli_free_result($result);
+															} else {
+																echo '<h4 class="no-annot">No Booking to our movies right now</h4>';
+															}
+														} else {
+															echo "ERROR: Could not able to execute $sql1. " . mysqli_error($link1);
+														}
+
+														// Close connection
+														mysqli_close($link);
+														?>
+
+													</select>
+                                        	</div>
+											<div class="col-lg-2"></div>
+										</div>
+                                    <div class="submithny text-center mt-4">
+                                        <br><button class="btn read-button">Submit Details</button>
                                     </div>
                                 </form>
                         </div>
@@ -164,14 +212,13 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 
     
 
-    $name = $_POST['fullname'];
-    $gender = $_POST['gender'];
-   $height = $_POST['height'];
-   $weight = $_POST['weight'];
-   $regionid = $_POST['regionid'];
+    $name = $_POST['theatre_name'];
+    $location = $_POST['location'];
+    $username = $_POST['username'];
+   
 
 
-    $sql = "INSERT INTO person(full_name, gender, height, weight, region_id) VALUES ('$name','$gender','$height','$weight','$regionid') ";
+    $sql = "INSERT INTO theatre(t_name, t_location, admin_username) VALUES ('$name','$location','$username') ";
    // $sql = "INSERT INTO student2(Names,rollno) VALUES ('$name','$rollno')";
     if(!mysqli_query($connect,$sql))
     {
@@ -182,7 +229,7 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
     {
         echo ' Inserted';
     }
-    header("refresh:10; url=insertperson.html");
+    // header("refresh:10; url=insertperson.html");
 
 ?> -->
 
