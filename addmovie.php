@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -22,7 +23,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
 					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
-						DBMS </a></h1>
+						BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -47,9 +48,9 @@
 	
 						<!--/search-right-->
 						<!--/search-right-->
-						<div class="search-right">
+						<!-- <div class="search-right"> -->
 							<!-- search popup -->
-							<div id="search" class="pop-overlay">
+							<!-- <div id="search" class="pop-overlay">
 								<div class="popup">
 									<form action="#" method="post" class="search-box">
 										<input type="search" placeholder="Search your Keyword" name="search"
@@ -59,10 +60,10 @@
 									</form>
 								</div>
 								<a class="close" href="#close">×</a>
-							</div>
+							</div> -->
 							<!-- /search popup -->
 							<!--/search-right-->
-						</div>
+						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
@@ -135,8 +136,8 @@ Admin Panel</h5>
 										<?php
 											$id = $_GET['id'];
 											echo '<form action="add.php?id=' . $id .'" method="post">';
-												echo '<div class="select left">';
-													echo '<select name="movies">';
+												// echo '<div class="select left">';
+													echo '<select style ="background: var(--theme-lite);border: 1px solid var(--theme-border);     border-radius: 6px;width: 250px;height: 55px;color: var(--theme-para);    padding: 14px;margin-left: 250px;"name="movies">';
 														echo '<option selected disabled>SELECT MOVIE TO ADD</option>';
 															$sql = "SELECT * FROM movie WHERE movie_id NOT IN (SELECT movie_id FROM `theatre-movie` WHERE 1 AND t_id = $id) ";
 															$result = mysqli_query($conn,$sql);
@@ -146,7 +147,7 @@ Admin Panel</h5>
 																echo   '<option value="' . $movie['movie_id'] . '">' . $movie['movie_title'] . '</option>';
 															}
 													echo '</select>';
-												echo '</div>';
+												// echo '</div>';
 												echo '<div class="submithny text-center mt-5">';
 													echo '<button type="submit" name="add" class="btn btn-primary">ADD</button>';
 												echo '</div>';
@@ -164,7 +165,7 @@ Admin Panel</h5>
 	<!-- footer-66 -->
 	<footer class="w3l-footer">
 		<section class="footer-inner-main">
-			<div class="footer-hny-grids py-5">
+			<!-- <div class="footer-hny-grids py-5">
 				<div class="container py-lg-4">
 					<div class="text-txt">
 						<div class="right-side">
@@ -190,7 +191,7 @@ Admin Panel</h5>
 					</div>
 				</div>
 			</div>
-			</div>
+			</div> -->
 			<!-- copyright -->
 			<!-- move top -->
 			<button onclick="topFunction()" id="movetop" title="Go to top">

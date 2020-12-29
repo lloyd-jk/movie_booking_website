@@ -42,7 +42,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
-				BookYourShows</a></h1>
+				BookYourShow</a></h1>
 				<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -68,10 +68,10 @@
 
 					<!--/search-right-->
 					<!--/search-right-->
-					<div class="search-right">
-						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span class="fa fa-search ml-3" aria-hidden="true"></span></a>
+					<!-- <div class="search-right">
+						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
 						<!-- search popup -->
-						<div id="search" class="pop-overlay">
+						<!-- <div id="search" class="pop-overlay">
 							<div class="popup">
 								<form action="#" method="post" class="search-box">
 									<input type="search" placeholder="Search your Keyword" name="search" required="required" autofocus="">
@@ -100,10 +100,10 @@
 								</div>
 							</div>
 							<a class="close" href="#close">×</a>
-						</div>
+						</div> -->
 						<!-- /search popup -->
 						<!--/search-right-->
-					</div>
+					<!-- </div> -->
 
 
 				</div>
@@ -132,7 +132,7 @@
 								<li><a href="http://localhost/Main%20Page/main login.php">Hello,
 									<?php echo $_SESSION['username']?>
 								</a></li>
-								<li><a href="#">Setting</a></li>
+								<!-- <li><a href="#">Setting</a></li> -->
 								<li><a href="http://localhost/Main%20Page/main login.php?logout=true">Logout</a></li>
 							</ul>
 						</li>
@@ -247,7 +247,7 @@
 
 
 
-								<select class = "selectcss" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);     border-radius: 6px;width: 125px;height: 55px;color: var(--theme-para);margin-right: 16px;" name="    theatre" required>
+								<select class = "selectcss" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);     border-radius: 6px;width: 125px;height: 55px;color: var(--theme-para);margin-right: 16px;    padding: 14px;" name="    theatre" required>
 									<option value="" disabled selected>THEATRE</option>
 									<?php
 						if ($result = mysqli_query($link1, $sql1)) {
@@ -283,7 +283,7 @@
 									<option value="7d">7D</option>
 								</select> -->
 								<!-- <div class="form-input"> -->
-								<select class = "selectcssdate" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);border-radius: 6px;width: 170px;height: 55px;color: var(--theme-para);margin-right: 16px;" name="date" required>
+								<select class = "selectcssdate" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);border-radius: 6px;width: 170px;height: 55px;color: var(--theme-para);margin-right: 16px;    padding: 14px;" name="date" required>
 									<option value="" disabled selected>DATE</option>
 									<option value="26-12-2020">December 26,2020</option>
 									<option value="27-12-2020">December 27,2020</option>
@@ -293,7 +293,7 @@
 								</select>
 							<!-- </div> -->
 
-								<select class = "selectcsstime" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);border-radius: 6px;width: 125px;height: 55px;color: var(--theme-para);margin-right: 16px;" name="hour" required>
+								<select class = "selectcsstime" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);border-radius: 6px;width: 125px;height: 55px;color: var(--theme-para);margin-right: 16px;    padding: 14px;" name="hour" required>
 									<option value="" disabled selected>TIME</option>
 									<option value="09-00">09:00 AM</option>
 									<option value="12-00">12:00 AM</option>

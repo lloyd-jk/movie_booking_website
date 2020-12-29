@@ -42,7 +42,7 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film"
 							aria-hidden="true"></span>
-						DBMS </a></h1>
+							BookYourShow </a></h1>
 				<!-- if logo is image enable this   
 						<a class="navbar-brand" href="#index.html">
 							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -74,11 +74,11 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 
 					<!--/search-right-->
 					<!--/search-right-->
-					<div class="search-right">
+					<!-- <div class="search-right">
 						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
-								class="fa fa-search ml-3" aria-hidden="true"></span></a>
+								class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
 						<!-- search popup -->
-						<div id="search" class="pop-overlay">
+						<!-- <div id="search" class="pop-overlay">
 							<div class="popup">
 								<form action="#" method="post" class="search-box">
 									<input type="search" placeholder="Search your Keyword" name="search"
@@ -109,10 +109,10 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 								</div>
 							</div>
 							<a class="close" href="#close">×</a>
-						</div>
+						</div> -->
 						<!-- /search popup -->
 						<!--/search-right-->
-					</div>
+					<!-- </div> -->
 
 				</div>
 				<!-- toggle switch for light and dark theme -->
@@ -139,7 +139,7 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 								<li><a href="http://localhost/Main%20Page/main login.php">Hello,
 									<?php echo $_SESSION['username']?>
 								</a></li>
-								<li><a href="#">Setting</a></li>
+								<!-- <li><a href="#">Setting</a></li> -->
 								<li><a href="http://localhost/Main%20Page/main login.php?logout=true">Logout</a></li>
 							</ul>
 						</li>

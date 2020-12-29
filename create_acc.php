@@ -11,9 +11,10 @@
 		$name=mysqli_real_escape_string($conn, $_REQUEST['name']);
 		$username=mysqli_real_escape_string($conn, $_REQUEST['username']);
 		$password=mysqli_real_escape_string($conn, $_REQUEST['password']);
+		$email_id=mysqli_real_escape_string($conn, $_REQUEST['email_id']);
 
 
-		$sql = "INSERT INTO login (name,username,password) VALUES('$name','$username','$password')";
+		$sql = "INSERT INTO login (name,username,password,email_id) VALUES('$name','$username','$password','$email_id')";
 
 		if (!(mysqli_query($conn, $sql))) {
 			header('Location: http://localhost/Main%20Page/create_acc.php?id=404');
@@ -57,20 +58,18 @@
 	<div class="layer">
 		
 		<div class="bottom-grid">
-			<div class="logo">
-				<h1> <a href="index.html"><span class="fa fa-key"></span> Logo</a></h1>
-			</div>
+			<span></span>
 			<div class="links">
 				<ul class="links-unordered-list">
-					<li class="active">
+					<!-- <li class="active">
 						<a href="#" class="">Login</a>
-					</li>
+					</li> -->
 					<li class="">
-						<a href="about.php" class="">About Us</a>
+						<a href="http://localhost/Main%20Page/index.php" class="">Browse</a>
 					</li>
-					<li class="">
+					<!-- <li class="">
 						<a href="create_acc.php" class="">Register</a>
-					</li>
+					</li> -->
 					<li class="">
 						<a href="contact.php" class="">Contact</a>
 					</li>
@@ -93,6 +92,12 @@
 						</div>
 					</div>
 
+					<div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="email_id" id= "email_id" placeholder="Email-id" required>
+						</div>
+					</div>
 					<div class="field-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
 						<div class="wthree-field">
@@ -128,7 +133,8 @@
 					<div class="wthree-field">
 						<button type="submit" name="create" class="btn">Get Started</button>
 					</div>
-					<ul class="list-login">
+					<br>
+					<!-- <ul class="list-login">
 						<li class="switch-agileits">
 							<label class="switch">
 								<input type="checkbox">
@@ -140,7 +146,7 @@
 							<a href="#" class="text-right">forgot password?</a>
 						</li>
 						<li class="clearfix"></li>
-					</ul>
+					</ul> -->
 					<ul class="list-login-bottom">
 						<li class="">
 							<a href="main login.php" class="">Login</a>

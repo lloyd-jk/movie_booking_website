@@ -10,7 +10,7 @@ No    -   Description
 	if (strpos($_SERVER['REQUEST_URI'], 'logout') !== false) {
 		session_unset();
 		session_destroy();
-		header('Location: http://localhost/Main%20Page/admin login.php');
+		header('Location: http://localhost/Main%20Page/main login.php');
 	}
 	// echo $_SESSION['username'];
 ?>
@@ -28,7 +28,7 @@ if (isset($_POST['login'])){
 	$password=mysqli_real_escape_string($conn,$_REQUEST['password']);
 	$_SESSION['username']= $username;
 	
-    $sql="SELECT * FROM `admin_login` WHERE username='$username'";
+    $sql="SELECT * FROM `admin` WHERE username='$username'";
     $sql1=mysqli_query($conn,$sql);
     $output=mysqli_fetch_all($sql1,MYSQLI_ASSOC);
     if(!($sql1)){
@@ -36,10 +36,10 @@ if (isset($_POST['login'])){
     }
 	if(count($output)==1 && (strcmp($output[0]['password'],$password)==0))
 	{
-		header('Location: http://localhost/Main%20Page/select_theatre.php');
+		header('Location: http://localhost/Main%20Page/index.php');
 		exit();
     }
-	header('Location: http://localhost/Main%20Page/admin%20login.php?id=405');
+	header('Location: http://localhost/Main%20Page/main login.php?id=405');
 }
 ?>
 
@@ -77,10 +77,10 @@ if (isset($_POST['login'])){
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="active">
-						<a href="main login.php" class="">User login</a>
+						<a href="admin login.php" class="">Admin login</a>
 					</li>
 					<li class="active">
-						<a href="websiteadmin login.php" class="">Website Admin login</a>
+						<a href="admin login.php" class="">Website login</a>
 					</li>
 					<li class="">
 						<a href="http://localhost/Main%20Page/index.php" class="">Browse</a>
@@ -95,9 +95,10 @@ if (isset($_POST['login'])){
 			</div>
 		</div>
 		<div class="content-w3ls">
+		<br><br>
 			<div class="text-center icon">
-                <i class="fa fa-spinner fa-spin" style="font-size:24px;color:white"></i>
-				<span style="font-size:24px;;color:white">Admin Login</span>
+			<i class="fa fa-spinner fa-spin" style="font-size:24px;;color:white"></i>
+				<span style="font-size:24px;;color:white">Web Admin Login</span>
 			</div>
 			<div class="content-bottom">
 
@@ -106,7 +107,7 @@ if (isset($_POST['login'])){
 					<div class="field-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
 						<div class="wthree-field">
-							<input name="username" id="username" type="text" placeholder="Admin Username" required>
+							<input name="username" id="username" type="text" placeholder="Username" required>
 						</div>
 					</div>
 					<div class="field-group">
@@ -129,32 +130,34 @@ if (isset($_POST['login'])){
 					<div class="wthree-field">
 						<button type="submit" name="login" class="btn">Login</button>
 					</div>
-					<!-- <ul class="list-login">
-						<li class="switch-agileits">
+					<ul class="list-login">
+						<!-- <li class="switch-agileits">
 							<label class="switch">
 								<input type="checkbox">
 								<span class="slider round"></span>
 								keep Logged in
 							</label>
-						</li>
-						<li>
+						</li> -->
+						<span></span>
+						<!-- <li>
 							<a href="#" class="text-right">forgot password?</a>
-						</li>
+						</li> -->
 						<li class="clearfix"></li>
-					</ul> -->
-					<br>
+					</ul>
 					<ul class="list-login-bottom">
-						<li class="">
-							<a href="admin create_acc.php" class="">Create Account</a>
-						</li>
-						<li class="">
+						<!-- <li class="">
+							<a href="create_acc.php" class="">Create Account</a>
+						</li> -->
+						<span></span>
+						<!-- <li class="">
 							<a href="http://localhost/Main%20Page/contact.php" class="text-right">Need Help?</a>
-						</li>
+						</li> -->
 						<li class="clearfix"></li>
 					</ul>
 				</form>
 			</div>
 		</div>
+		<span></span>
 		<!-- <div class="bottom-grid1">
 			<div class="links">
 				<ul class="links-unordered-list">

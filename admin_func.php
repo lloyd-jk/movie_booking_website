@@ -28,7 +28,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
 					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
-						DBMS </a></h1>
+					BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
 								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -53,9 +53,9 @@
 	
 						<!--/search-right-->
 						<!--/search-right-->
-						<div class="search-right">
+						<!-- <div class="search-right"> -->
 							<!-- search popup -->
-							<div id="search" class="pop-overlay">
+							<!-- <div id="search" class="pop-overlay">
 								<div class="popup">
 									<form action="#" method="post" class="search-box">
 										<input type="search" placeholder="Search your Keyword" name="search"
@@ -65,10 +65,10 @@
 									</form>
 								</div>
 								<a class="close" href="#close">×</a>
-							</div>
+							</div> -->
 							<!-- /search popup -->
 							<!--/search-right-->
-						</div>
+						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
@@ -170,33 +170,7 @@ Admin Panel</h5>
 	<!-- footer-66 -->
 	<footer class="w3l-footer">
 		<section class="footer-inner-main">
-			<div class="footer-hny-grids py-5">
-				<div class="container py-lg-4">
-					<div class="text-txt">
-						<div class="right-side">
-							<div class="row footer-about">
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner1.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner2.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner3.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner4.jpg"
-											alt=""></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
+				<!-- f -->
 			<!-- copyright -->
 			<!-- move top -->
 			<button onclick="topFunction()" id="movetop" title="Go to top">
