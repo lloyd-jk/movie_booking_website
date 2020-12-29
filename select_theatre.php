@@ -57,7 +57,7 @@ if ($result = mysqli_query($link1, $sql1)) {
 			<!--/nav-->
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
-					<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
+					<h1><a class="navbar-brand" href="select_theatre.php"><span class="fa fa-film" aria-hidden="true"></span>
 					BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
