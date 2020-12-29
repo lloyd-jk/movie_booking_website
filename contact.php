@@ -2,8 +2,23 @@
     session_start();
     if ($_SESSION['username']==null) {
         $_SESSION['username']='guest';
-    }
+	}
+
+	$conn = mysqli_connect('localhost','root','','project');
+	if (isset($_POST['submit'])){
+	$name=mysqli_real_escape_string($conn,$_REQUEST['w3lName']);
+	$subject=mysqli_real_escape_string($conn,$_REQUEST['w3lSubject']);
+	$comment=mysqli_real_escape_string($conn,$_REQUEST['w3lMessage']);
+    $phone_number=mysqli_real_escape_string($conn,$_REQUEST['w3lPhone']);
+	$email_id=mysqli_real_escape_string($conn,$_REQUEST['w3lSender']);
+	
+	$sql = "INSERT INTO contact (name,subject,comment,phone_number,email_id) VALUES('$name','$subject','$comment','$phone_number','$email_id')";
+	if(!(mysqli_query($conn,$sql))){
+        echo mysqli_error($conn);
+	}
+}
 ?>
+
 
 <!doctype html>
 <html lang="zxx">
@@ -27,7 +42,7 @@
 			<!--/nav-->
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
-					<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
+					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
@@ -138,7 +153,7 @@
 	<div class="w3l-breadcrumbs">
 		<nav id="breadcrumbs" class="breadcrumbs">
 			<div class="container page-wrapper">
-			<a href="index.php">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span>
+			<a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span>
 			</div>
 		</nav>
 	</div>
@@ -154,7 +169,7 @@
 			</div>
 			<div class="contact-view mt-lg-5 mt-4">
 			  <div class="conhny-form-section">
-				<form action="https://sendmail.w3layouts.com/submitForm" method="post" class="formhny-sec">
+				<form action="#" method="post" class="formhny-sec">
 						<div class="form-grids">
 							<div class="form-input">
 								<input type="text" name="w3lName" id="w3lName" placeholder="Enter your name *" required="" />
@@ -176,7 +191,7 @@
 								required=""></textarea>
 						</div>
 						<div class="submithny text-right mt-4">
-							<button class="btn read-button">Submit Message</button>
+							<button class="btn read-button" name="submit">Submit Message</button>
 						</div>
 					</form>
 			  </div>
@@ -245,8 +260,6 @@
 								</div>
 							</div>
 							<!-- <div class="row footer-links">
-
-
 								
 								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
 									<h6>Information</h6>
