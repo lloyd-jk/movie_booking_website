@@ -22,7 +22,7 @@
 			<!--/nav-->
 			<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 				<div class="container">
-					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
+					<h1><a class="navbar-brand" href="select_theatre.php"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
@@ -106,8 +106,6 @@
 			<nav id="breadcrumbs" class="breadcrumbs">
 				<div class="container page-wrapper">
 				<a href="select_theatre.php">Home</a> » <span class="breadcrumb_last" aria-current="page">Select Operation</span> » <span class="breadcrumb_last" aria-current="page">Add Movie to Theater</span>
-				<h5 style="float:right;font-family: 'Open Sans', sans-serif; font-weight: 400;"><i class="fa fa-lock" aria-hidden="true"></i>
-Admin Panel</h5>
 				</div>
 			</nav>
 		</div>
