@@ -142,7 +142,7 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
                                             <input type="text" name="genre" id="genre" placeholder="Enter Movie Genre *" required />
                                         </div>
                                         <div class="form-input">
-                                            <input type="email" name="location" id="location" placeholder="Upload movie thumbnail *"
+                                            <input type="text" name="location" id="location" placeholder="Upload movie thumbnail *"
                                                 required />
                                         </div>
                                         <div class="form-input">
@@ -150,7 +150,7 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
                                                 required />
                                         </div>
                                         <div class="form-input">
-                                            <input type="email" name="director" id="director" placeholder="Enter Director's name *"
+                                            <input type="text" name="director" id="director" placeholder="Enter Director's name *"
                                                 required />
                                         </div>
                                         <div class="form-input">
@@ -172,31 +172,32 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 
 
 
-<!-- <?php
+<?php
 
     
 
-    $name = $_POST['fullname'];
-    $gender = $_POST['gender'];
-   $height = $_POST['height'];
-   $weight = $_POST['weight'];
-   $regionid = $_POST['regionid'];
+$movie_title = $_POST['movie_title'];
+$genre = $_POST['genre'];
+$location = $_POST['location'];
+$duration = $_POST['duration'];
+$director = $_POST['director'];
+$releasedate = $_POST['releasedate'];
 
 
-    $sql = "INSERT INTO person(full_name, gender, height, weight, region_id) VALUES ('$name','$gender','$height','$weight','$regionid') ";
-   // $sql = "INSERT INTO student2(Names,rollno) VALUES ('$name','$rollno')";
-    if(!mysqli_query($connect,$sql))
-    {
-        echo mysqli_error($connect);
+$sql = "INSERT INTO movie(movie_title, movie_genre, movie_img, movie_duration, movie_director , movie_release) VALUES ('$movie_title','$genre','$location','$duration','$director','$releasedate') ";
+// $sql = "INSERT INTO student2(Names,rollno) VALUES ('$name','$rollno')";
+if(!mysqli_query($connect,$sql))
+{
+	echo mysqli_error($connect);
 
-    }
-    else
-    {
-        echo ' Inserted';
-    }
-    header("refresh:10; url=insertperson.html");
+}
+else
+{
+	echo ' Inserted';
+}
+// header("refresh:10; url=insertperson.html");
 
-?> -->
+?>
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Template JavaScript -->
