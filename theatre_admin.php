@@ -56,6 +56,10 @@ if ($result = mysqli_query($link1, $sql1)) {
 				<div class="container">
 					<h1><a class="navbar-brand" href="movie_admin.php"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
+					<!-- if logo is image enable this   
+							<a class="navbar-brand" href="#index.html">
+								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -191,7 +195,7 @@ if ($result = mysqli_query($link1, $sql1)) {
 											<div class="col-lg-2"></div>
 										</div>
                                     <div class="submithny text-center mt-4">
-                                        <br><button class="btn read-button">Submit Details</button>
+                                        <br><button class="btn read-button" name='login'>Submit Details</button>
                                     </div>
                                 </form>
                         </div>
@@ -203,10 +207,9 @@ if ($result = mysqli_query($link1, $sql1)) {
 </html>
 
 
+<?php
 
-<!-- <?php
-
-    
+if (isset($_POST['login'])){   
 
     $name = $_POST['theatre_name'];
     $location = $_POST['location'];
@@ -226,8 +229,8 @@ if ($result = mysqli_query($link1, $sql1)) {
         echo ' Inserted';
     }
     // header("refresh:10; url=insertperson.html");
-
-?> -->
+}
+?> 
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Template JavaScript -->

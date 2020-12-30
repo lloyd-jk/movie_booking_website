@@ -35,6 +35,10 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 				<div class="container">
 					<h1><a class="navbar-brand" href="movie_admin.php"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
+					<!-- if logo is image enable this   
+							<a class="navbar-brand" href="#index.html">
+								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -155,7 +159,7 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
                                         </div>
                                     </div>
                                     <div class="submithny text-right mt-4">
-                                        <button class="btn read-button">Submit Details</button>
+                                        <button name = "login" class="btn read-button">Submit Details</button>
                                     </div>
                                 </form>
                         </div>
@@ -171,29 +175,26 @@ mysqli_select_db($connect, 'project') or die(mysqli_error($connect));
 <?php
 
     
+if (isset($_POST['login'])) {
+    $movie_title = $_POST['movie_title'];
+    $genre = $_POST['genre'];
+    $location = $_POST['location'];
+    $duration = $_POST['duration'];
+    $director = $_POST['director'];
+    $releasedate = $_POST['releasedate'];
 
-$movie_title = $_POST['movie_title'];
-$genre = $_POST['genre'];
-$location = $_POST['location'];
-$duration = $_POST['duration'];
-$director = $_POST['director'];
-$releasedate = $_POST['releasedate'];
 
-
-$sql = "INSERT INTO movie(movie_title, movie_genre, movie_img, movie_duration, movie_director , movie_release) VALUES ('$movie_title','$genre','$location','$duration','$director','$releasedate') ";
-// $sql = "INSERT INTO student2(Names,rollno) VALUES ('$name','$rollno')";
-if(!mysqli_query($connect,$sql))
-{
-	echo mysqli_error($connect);
-
+    $sql = "INSERT INTO movie(movie_title, movie_genre, movie_img, movie_duration, movie_director , movie_release) VALUES ('$movie_title','$genre','$location','$duration','$director','$releasedate') ";
+    // $sql = "INSERT INTO student2(Names,rollno) VALUES ('$name','$rollno')";
+    if (!mysqli_query($connect, $sql)) {
+        echo mysqli_error($connect);
+    } else {
+        echo ' Inserted';
+    }
+    // header("refresh:10; url=insertperson.html");
 }
-else
-{
-	echo ' Inserted';
-}
-// header("refresh:10; url=insertperson.html");
-
 ?>
+
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Template JavaScript -->
