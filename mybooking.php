@@ -226,28 +226,6 @@ $query = mysqli_query($connect, $sql) or die(mysqli_error($connect));
 												alt=""></a>
 									</div>
 								</div>
-								<!-- <div class="row footer-links">
-									
-									<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-										<h6>Information</h6>
-										<ul>
-											<li><a href="index.php">Home</a> </li>
-											<li><a href="about.php">About</a> </li>
-											<li><a href="main login.php">Login</a></li>
-											<li><a href="contact.php">Contact</a></li>
-										</ul>
-									</div>
-									
-									<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-										<h6>Newsletter</h6>
-										<form action="#" class="subscribe mb-3" method="post">
-											<input type="email" name="email" placeholder="Your Email Address" required="">
-											<button><span class="fa fa-envelope-o"></span></button>
-										</form>
-										<p>Enter your email and receive the latest news, updates and special offers from us.
-										</p>
-									</div>
-								</div> -->
 							</div>
 						</div>
 					</div>
