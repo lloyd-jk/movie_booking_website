@@ -43,10 +43,6 @@
 			<div class="container">
 				<h1><a class="navbar-brand" href="index.php"><span class="fa fa-film" aria-hidden="true"></span>
 				BookYourShow</a></h1>
-				<!-- if logo is image enable this   
-							<a class="navbar-brand" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<!-- <span class="navbar-toggler-icon"></span> -->
 					<span class="fa icon-expand fa-bars"></span>
@@ -65,45 +61,6 @@
 							<a class="nav-link" href="contact.php">Contact</a>
 						</li>
 					</ul>
-
-					<!--/search-right-->
-					<!--/search-right-->
-					<!-- <div class="search-right">
-						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
-						<!-- search popup -->
-						<!-- <div id="search" class="pop-overlay">
-							<div class="popup">
-								<form action="#" method="post" class="search-box">
-									<input type="search" placeholder="Search your Keyword" name="search" required="required" autofocus="">
-									<button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
-								</form>
-								<div class="browse-items">
-									<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
-									<ul class="search-items">
-										<li><a href="genre.html">Action</a></li>
-										<li><a href="genre.html">Drama</a></li>
-										<li><a href="genre.html">Family</a></li>
-										<li><a href="genre.html">Thriller</a></li>
-										<li><a href="genre.html">Commedy</a></li>
-										<li><a href="genre.html">Romantic</a></li>
-										<li><a href="genre.html">Tv-Series</a></li>
-										<li><a href="genre.html">Horror</a></li>
-										<li><a href="genre.html">Action</a></li>
-										<li><a href="genre.html">Drama</a></li>
-										<li><a href="genre.html">Family</a></li>
-										<li><a href="genre.html">Thriller</a></li>
-										<li><a href="genre.html">Commedy</a></li>
-										<li><a href="genre.html">Romantic</a></li>
-										<li><a href="genre.html">Tv-Series</a></li>
-										<li><a href="genre.html">Horror</a></li>
-									</ul>
-								</div>
-							</div>
-							<a class="close" href="#close">×</a>
-						</div> -->
-						<!-- /search popup -->
-						<!--/search-right-->
-					<!-- </div> -->
 
 
 				</div>
@@ -144,15 +101,6 @@
 		</nav>
 		<!--//nav-->
 	</header>
-	<!-- //header -->
-	<!-- /breadcrumbs -->
-	<!-- <div class="w3l-breadcrumbs">
-		<nav id="breadcrumbs" class="breadcrumbs">
-			
-		</nav>
-	</div> -->
-	<!--//breadcrumbs -->
-	<!-- /about-->
 
 			<div class="row ab-grids-sec align-items-center">
 				<div class="col-lg-6 ab-right">
@@ -171,11 +119,6 @@
 					<br>
 					</div>
 					
-					<!-- <div class="booking-panel-section booking-panel-section3">
-            <div class="movie-box">
-                
-            </div>
-        </div> -->
 					<div >
 						<div class="movietitle" style="margin-left:80px;font-size: 40px"><?php echo $row['movie_title']; ?></div>
 						<div>
@@ -274,14 +217,6 @@
 
 
 								</select>
-
-								<!-- <select class = "selectcsstype" name="type" required>
-									<option value="" disabled selected>TYPE</option>
-									<option value="3d">3D</option>
-									<option value="2d">2D</option>
-									<option value="imax">IMAX</option>
-									<option value="7d">7D</option>
-								</select> -->
 								<!-- <div class="form-input"> -->
 								<select class = "selectcssdate" style ="background: var(--theme-lite);border: 1px solid var(--theme-border);border-radius: 6px;width: 170px;height: 55px;color: var(--theme-para);margin-right: 16px;    padding: 14px;" name="date" required>
 									<option value="" disabled selected>DATE</option>
@@ -370,176 +305,8 @@
 			</div>
 		</div>
 
-		<!-- <div class="w3l-counter-stats-info text-center">
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">65</p>
-							<h4>Movies</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">165</p>
-							<h4>Shows</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">463</p>
-							<h4>Members</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">5063</p>
-							<h4>Year of Use</h4>
-
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 	</div>
 	</div>
-	<!-- //about-->
-	<!--grids-sec1-->
-	<!-- <section class="w3l-team" id="team">
-			<div class="grids-main py-5">
-				<div class="container py-lg-4">
-					<div class="headerhny-title">
-						<h3 class="hny-title">Our Actors</h3>
-					</div>
-					<div class="owl-team owl-carousel owl-theme">
-						<div class="item vhny-grid">
-							<div class="d-grid team-info">
-								<div class="column position-relative">
-									<a href="#url"><img src="assets/images/a1.jpg" alt="" class="img-fluid rounded team-image" /></a>
-								</div>
-								<div class="column text-center">
-									<h3 class="name-pos"><a href="#url">Dwayne johnson</a></h3>
-									
-									<div class="social">
-										<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-										<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-										<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div class="item vhny-grid">
-							<div class="box16">
-								<div class="d-grid team-info">
-									<div class="column position-relative">
-										<a href="#url"><img src="assets/images/a2.jpg" alt="" class="img-fluid rounded team-image" /></a>
-									</div>
-									<div class="column text-center">
-										<h3 class="name-pos"><a href="#url">Karen Gillan</a></h3>
-										
-										<div class="social">
-											<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-											<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-											<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div class="item vhny-grid">
-							<div class="box16">
-								<div class="d-grid team-info">
-									<div class="column position-relative">
-										<a href="#url"><img src="assets/images/a3.jpg" alt="" class="img-fluid rounded team-image" /></a>
-									</div>
-									<div class="column text-center">
-										<h3 class="name-pos"><a href="#url">Chris Hemsworth</a></h3>
-										
-										<div class="social">
-											<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-											<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-											<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div class="item vhny-grid">
-							<div class="box16">
-								<div class="d-grid team-info">
-									<div class="column position-relative">
-										<a href="#url"><img src="assets/images/a4.jpg" alt="" class="img-fluid rounded team-image" /></a>
-									</div>
-									<div class="column text-center">
-										<h3 class="name-pos"><a href="#url">Elton John</a></h3>
-									
-										<div class="social">
-											<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-											<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-											<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div class="item vhny-grid">
-							<div class="box16">
-								<div class="d-grid team-info">
-									<div class="column position-relative">
-										<a href="#url"><img src="assets/images/a5.jpg" alt="" class="img-fluid rounded team-image" /></a>
-									</div>
-									<div class="column text-center">
-										<h3 class="name-pos"><a href="#url">Liu Yifei</a></h3>
-										<div class="social">
-											<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-											<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-											<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div class="item vhny-grid">
-							<div class="box16">
-								<div class="d-grid team-info">
-									<div class="column position-relative">
-										<a href="#url"><img src="assets/images/a3.jpg" alt="" class="img-fluid rounded team-image" /></a>
-									</div>
-									<div class="column text-center">
-										<h3 class="name-pos"><a href="#url">Chris Hemsworth</a></h3>
-										
-										<div class="social">
-											<a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-											<a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-											<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-					</div>
-				</div>
-	
-		
-	
-			</div>
-		</section> -->
-	<!--//grids-sec1-->
-	<!--/testimonials-->
 	
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Template JavaScript -->
