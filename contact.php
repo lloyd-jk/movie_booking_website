@@ -44,10 +44,6 @@
 				<div class="container">
 					<h1><a class="navbar-brand" href="index.html"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
-					<!-- if logo is image enable this   
-							<a class="navbar-brand" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -68,48 +64,6 @@
 								<a class="nav-link" href="contact.php">Contact</a>
 							</li>
 						</ul>
-	
-						<!--/search-right-->
-						<!--/search-right-->
-						<!-- <div class="search-right">
-							<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
-									class="fa fa-search ml-3" aria-hidden="true"></span></a> -->
-							<!-- search popup -->
-							<!-- <div id="search" class="pop-overlay">
-								<div class="popup">
-									<form action="#" method="post" class="search-box">
-										<input type="search" placeholder="Search your Keyword" name="search"
-											required="required" autofocus="">
-										<button type="submit" class="btn"><span class="fa fa-search"
-												aria-hidden="true"></span></button>
-									</form>
-									<div class="browse-items">
-										<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
-										<ul class="search-items">
-											<li><a href="genre.html">Action</a></li>
-											<li><a href="genre.html">Drama</a></li>
-											<li><a href="genre.html">Family</a></li>
-											<li><a href="genre.html">Thriller</a></li>
-											<li><a href="genre.html">Commedy</a></li>
-											<li><a href="genre.html">Romantic</a></li>
-											<li><a href="genre.html">Tv-Series</a></li>
-											<li><a href="genre.html">Horror</a></li>
-											<li><a href="genre.html">Action</a></li>
-											<li><a href="genre.html">Drama</a></li>
-											<li><a href="genre.html">Family</a></li>
-											<li><a href="genre.html">Thriller</a></li>
-											<li><a href="genre.html">Commedy</a></li>
-											<li><a href="genre.html">Romantic</a></li>
-											<li><a href="genre.html">Tv-Series</a></li>
-											<li><a href="genre.html">Horror</a></li>
-										</ul>
-									</div>
-								</div>
-								<a class="close" href="#close">×</a>
-							</div> -->
-							<!-- /search popup -->
-							<!--/search-right-->
-						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
@@ -259,28 +213,6 @@
 											alt=""></a>
 								</div>
 							</div>
-							<!-- <div class="row footer-links">
-								
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Information</h6>
-									<ul>
-										<li><a href="index.php">Home</a> </li>
-										<li><a href="about.php">About</a> </li>
-										<li><a href="main login.php">Login</a></li>
-										<li><a href="contact.php">Contact</a></li>
-									</ul>
-								</div>
-								
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Newsletter</h6>
-									<form action="#" class="subscribe mb-3" method="post">
-										<input type="email" name="email" placeholder="Your Email Address" required="">
-										<button><span class="fa fa-envelope-o"></span></button>
-									</form>
-									<p>Enter your email and receive the latest news, updates and special offers from us.
-									</p>
-								</div>
-							</div> -->
 						</div>
 					</div>
 				</div>
