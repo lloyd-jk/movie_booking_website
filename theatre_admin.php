@@ -56,10 +56,6 @@ if ($result = mysqli_query($link1, $sql1)) {
 				<div class="container">
 					<h1><a class="navbar-brand" href="movie_admin.php"><span class="fa fa-film" aria-hidden="true"></span>
 						BookYourShow </a></h1>
-					<!-- if logo is image enable this   
-							<a class="navbar-brand" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
