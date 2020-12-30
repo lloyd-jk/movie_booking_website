@@ -60,15 +60,9 @@
 			<span></span>
 			<div class="links">
 				<ul class="links-unordered-list">
-					<!-- <li class="active">
-						<a href="#" class="">Login</a>
-					</li> -->
 					<li class="">
 						<a href="http://localhost/Main%20Page/index.php" class="">Browse</a>
 					</li>
-					<!-- <li class="">
-						<a href="create_acc.php" class="">Register</a>
-					</li> -->
 					<li class="">
 						<a href="contact.php" class="">Contact</a>
 					</li>
@@ -132,27 +126,11 @@
 					<div class="wthree-field">
 						<button type="submit" name="create" class="btn">Get Started</button>
 					</div>
-					<!-- <ul class="list-login">
-						<li class="switch-agileits">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-								keep Logged in
-							</label>
-						</li>
-						<li>
-							<a href="#" class="text-right">forgot password?</a>
-						</li>
-						<li class="clearfix"></li>
-					</ul> -->
 					<br>
 					<ul class="list-login-bottom">
 						<li class="">
 							<a href="admin login.php" class="">Login</a>
 						</li>
-						<!-- <li class="">
-							<a href="#" class="text-right">Need Help?</a>
-						</li> -->
 						<li class="clearfix"></li>
 					</ul>
 				</form>
