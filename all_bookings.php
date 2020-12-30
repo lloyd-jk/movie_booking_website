@@ -19,16 +19,7 @@ mysqli_select_db($connect,'project') or die(mysqli_error($connect));
 
 $sql = "SELECT * FROM booking";
 
-// if(isset($_POST['search'])) {
-
-//     $search_term = $connect -> real_escape_string($_POST['search_box']);
-//     $sql .= "WHERE person_id = '{$search_term}'";
-// }
-
 $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
-//
-//$sql = mysqli_query($connect,"SELECT * FROM student WHERE rollno = '$search_term'");
-// echo ' Displayed ';
 
 ?>
 
@@ -59,10 +50,6 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 				<div class="container">
 					<h1><a class="navbar-brand" href="movie_admin.php"><span class="fa fa-film" aria-hidden="true"></span>
 					BookYourShow </a></h1>
-					<!-- if logo is image enable this   
-							<a class="navbar-brand" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -83,25 +70,6 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 								<a class="nav-link" href="all_bookings.php">View Bookings</a>
 							</li>
 						</ul>
-	
-						<!--/search-right-->
-						<!--/search-right-->
-						<!-- <div class="search-right"> -->
-							<!-- search popup -->
-							<!-- <div id="search" class="pop-overlay">
-								<div class="popup">
-									<form action="#" method="post" class="search-box">
-										<input type="search" placeholder="Search your Keyword" name="search"
-											required="required" autofocus="">
-										<button type="submit" class="btn"><span class="fa fa-search"
-												aria-hidden="true"></span></button>
-									</form>
-								</div>
-								<a class="close" href="#close">×</a>
-							</div> -->
-							<!-- /search popup -->
-							<!--/search-right-->
-						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
@@ -195,33 +163,6 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
         </section>
     <footer class="w3l-footer">
 		<section class="footer-inner-main">
-			<!-- <div class="footer-hny-grids py-5">
-				<div class="container py-lg-4">
-					<div class="text-txt">
-						<div class="right-side">
-							<div class="row footer-about">
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner1.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner2.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner3.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="#"><img class="img-fluid" src="assets/images/banner4.jpg"
-											alt=""></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div> -->
 			<!-- copyright -->
 			<!-- move top -->
 			<button onclick="topFunction()" id="movetop" title="Go to top">
@@ -256,13 +197,7 @@ $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
 </html> 
 <!doctype html>
 
-
-
-<!-- <form name="delete_form" method="POST" action="cancelbooking.php">
-        </br></br></br></br>
-        <h2>Cancel booking</h2>
-            Enter the Booking Id to Cancel: <input type="text" name="delete_box" /> 
-            <input type="submit" name="delete" value="Cancel booking.">    
+   
 </form> -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Template JavaScript -->
