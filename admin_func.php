@@ -29,10 +29,6 @@
 				<div class="container">
 					<h1><a class="navbar-brand" href="select_theatre.php"><span class="fa fa-film" aria-hidden="true"></span>
 					BookYourShow </a></h1>
-					<!-- if logo is image enable this   
-							<a class="navbar-brand" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -50,25 +46,6 @@
 								<a class="nav-link" href="display_theater.php">View Bookings</a>
 							</li>
 						</ul>
-	
-						<!--/search-right-->
-						<!--/search-right-->
-						<!-- <div class="search-right"> -->
-							<!-- search popup -->
-							<!-- <div id="search" class="pop-overlay">
-								<div class="popup">
-									<form action="#" method="post" class="search-box">
-										<input type="search" placeholder="Search your Keyword" name="search"
-											required="required" autofocus="">
-										<button type="submit" class="btn"><span class="fa fa-search"
-												aria-hidden="true"></span></button>
-									</form>
-								</div>
-								<a class="close" href="#close">×</a>
-							</div> -->
-							<!-- /search popup -->
-							<!--/search-right-->
-						<!-- </div> -->
 	
 					</div>
 					<!-- toggle switch for light and dark theme -->
