@@ -85,9 +85,7 @@ if (isset($_POST['login'])){
 					<li class="">
 						<a href="http://localhost/Main%20Page/index.php" class="">Browse</a>
 					</li>
-					<!-- <li class="">
-						<a href="create_acc.php" class="">Register</a>
-					</li> -->
+
 					<li class="">
 						<a href="contact.php" class="">Contact</a>
 					</li>
@@ -130,17 +128,7 @@ if (isset($_POST['login'])){
 						<button type="submit" name="login" class="btn">Login</button>
 					</div>
 					<ul class="list-login">
-						<!-- <li class="switch-agileits">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-								keep Logged in
-							</label>
-						</li> -->
 						<span></span>
-						<!-- <li>
-							<a href="#" class="text-right">forgot password?</a>
-						</li> -->
 						<li class="clearfix"></li>
 					</ul>
 					<ul class="list-login-bottom">
@@ -156,21 +144,7 @@ if (isset($_POST['login'])){
 			</div>
 		</div>
 		<span></span>
-		<!-- <div class="bottom-grid1">
-			<div class="links">
-				<ul class="links-unordered-list">
-					<li class="">
-						<a href="about.php" class="">About Us</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Privacy Policy</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Terms of Use</a>
-					</li>
-				</ul>
-			</div>
-		</div> -->
+
     </div>
 </section>
 
